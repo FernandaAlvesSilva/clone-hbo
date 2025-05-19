@@ -295,7 +295,7 @@
   .list-card,
   .list-card li {
     margin: 0.5rem;
-    padding: 0.25rem;
+    padding: .9rem;
     font-size: 0.95rem;
   }
 
@@ -316,6 +316,7 @@
   .titulo-text {
     font-size: 1.5rem;
     margin: 1rem 0;
+
   }
 
   .titulo {
