@@ -1,0 +1,379 @@
+@import url(/assets/css/global.css);
+
+#home {
+  position: relative;
+  margin-top: 4rem;
+  padding: 6.25rem 0 18.75rem;
+  background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite alternate;
+  height: 115vh;
+}
+
+#home::after {
+  content: "";
+  width: 100%;
+  height: 15.625rem;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(0deg, var(--primary-color), transparent);
+}
+
+.logo-container {
+  margin-top: 1.5rem;
+  padding: 2rem;
+}
+
+.logo-container img {
+  width: auto;
+  height: auto;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.titulo-text {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "raleway", sans-serif;
+  font-size: 2rem;
+}
+
+.titulo {
+  display: block;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.line {
+  width: 50%;
+  max-width: 50.25rem;
+  height: 0.3rem;
+  background: linear-gradient(90deg, #b535f6, #ff00e5);
+  margin: 0 auto;
+  border: none;
+  margin-top: 2rem;
+}
+
+.text-assinar {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+}
+
+.text-valor {
+  font-family: "raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.text-valor {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.text-mes {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.text-p {
+  font-weight: 100;
+  font-family: "raleway", sans-serif;
+  font-size: 1rem;
+  color: var(--text-color);
+  white-space: pre-line;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+#planos {
+  padding: 2rem;
+  background: url(/assets/images/background-movies-series.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.text-planos, .text-universe {
+  font-family: "raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.card-plans{
+  perspective: 2000px;
+  perspective-origin: top;
+  border: none;
+}
+
+.card-body {
+  background: linear-gradient(0deg, transparent, #3b1e63);
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  font-family: "raleway", sans-serif;
+  font-size: 1.25rem;
+  padding: 2rem;
+  transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.card-body:hover {
+  transform: rotateY(25deg);
+}
+
+.cardy-body-two{
+  transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.card-body-two:hover {
+  transform: rotateY(-25deg);
+}
+
+.card-title,
+.card-text {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem;
+  font-family: "raleway", sans-serif;
+}
+
+.card-text {
+  color: var(--secondary-color);
+}
+
+.list-card,
+.list-card li {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+.button-card {
+  margin-top: 9rem;
+}
+
+.card-film, .carousel-inner {
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid transparent;
+  transition: transform 0.8s, background 0.8s, border 1s;
+}
+.card-film:hover, .carousel-inner:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--tertiary-color);
+}
+
+.card-film:hover .contents__image {
+  opacity: 0;
+}
+
+.contents__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 2s;
+}
+
+/*mobile*/
+.carousel-inner > div:nth-child(1) .card-film:hover {
+  background-image: url("/assets/images/hbo-hover_0.webp");
+}
+
+.carousel-inner > div:nth-child(2) .card-film:hover {
+  background-image: url("/assets/images/MAX-Hover.webp");
+}
+
+.carousel-inner > div:nth-child(3) .card-film:hover {
+  background-image: url("/assets/images/DC-Hover.webp");
+}
+
+.carousel-inner > div:nth-child(4) .card-film:hover {
+  background-image: url("/assets/images/WB-Hover.webp");
+}
+
+.carousel-inner > div:nth-child(5) .card-film:hover {
+  background-image: url("/assets/images/CN-Hover.png");
+}
+
+.carousel-inner > div:nth-child(6) .card-film:hover {
+  background-image: url("/assets/images/UCL-Hover.webp");
+}
+
+/*desktop*/
+.card-universe > div:nth-child(1) .card-film:hover {
+  background-image: url("/assets/images/hbo-hover_0.webp");
+}
+
+.card-universe > div:nth-child(2) .card-film:hover {
+  background-image: url("/assets/images/MAX-Hover.webp");
+}
+
+.card-universe > div:nth-child(3) .card-film:hover {
+  background-image: url("/assets/images/DC-Hover.webp");
+}
+
+.card-universe > div:nth-child(4) .card-film:hover {
+  background-image: url("/assets/images/WB-Hover.webp");
+}
+
+.card-universe > div:nth-child(5) .card-film:hover {
+  background-image: url("/assets/images/CN-Hover.png");
+}
+
+.card-universe > div:nth-child(6) .card-film:hover {
+  background-image: url("/assets/images/UCL-Hover.webp");
+}
+
+/* Responsividade para tablets */
+@media screen and (max-width: 900px) {
+  .logo-container {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .titulo-text {
+    font-size: 1.3rem;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .line {
+    width: 70%;
+    margin-top: 1rem;
+  }
+
+  .text-assinar {
+    font-size: 1rem;
+  }
+
+  .text-valor {
+    font-size: 2rem;
+  }
+
+  .text-mes {
+    font-size: 0.9rem;
+  }
+
+  .text-p {
+    font-size: 0.9rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  .text-planos, .text-universe {
+    font-size: 1.2rem;
+  }
+
+  #planos, .text-planos, .text-universe, .card-body {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .card-title,
+  .card-text {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+
+  .list-card,
+  .list-card li {
+    margin: 0.5rem;
+    padding: 0.25rem;
+    font-size: 0.95rem;
+  }
+
+  .button-card {
+    margin-top: 8rem;
+  }
+}
+
+/* Responsividade para celulares */
+@media screen and (max-width: 500px) {
+
+
+  .logo-container {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .titulo-text {
+    font-size: 1.5rem;
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .line {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  .text-assinar {
+    font-size: 1rem;
+  }
+
+  .text-valor {
+    font-size: 2rem;
+  }
+
+  .text-mes {
+    font-size: 0.8rem;
+  }
+
+  .text-p {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  .text-planos, .text-universe {
+    font-size: 1.5rem;
+  }
+
+  #planos, .text-planos, .text-universe, .card-body {
+    padding: 0rem;
+    margin: 0;
+  }
+
+  .card-title,
+  .card-text {
+    font-size: 1rem;
+    margin: 0.25rem;
+  }
+
+  .list-card,
+  .list-card li {
+    margin: .9rem;
+    padding: .9rem;
+    font-size: 0.85rem;
+  }
+
+  .button-card {
+    margin-top: 2rem;
+  }
+
+  .card-body {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .card-film, .carousel-inner {
+    border-radius: 0.5rem;
+  }
+}
