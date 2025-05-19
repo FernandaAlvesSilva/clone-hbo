@@ -7,7 +7,7 @@
   background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite alternate;
-  height: 115vh;
+  z-index: 1;
 }
 
 #home::after {
@@ -17,6 +17,7 @@
   position: absolute;
   bottom: 0;
   background: linear-gradient(0deg, var(--primary-color), transparent);
+  z-index: -1;
 }
 
 .logo-container {
@@ -314,10 +315,12 @@
 
   .titulo-text {
     font-size: 1.5rem;
+    margin: 1rem 0;
   }
 
   .titulo {
     font-size: 2.5rem;
+    margin: 1rem 0;
   }
 
   .line {
@@ -348,7 +351,7 @@
   }
 
   #planos, .text-planos, .text-universe, .card-body {
-    padding: 0rem;
+    padding: 0;
     margin: 0;
   }
 
@@ -360,8 +363,8 @@
 
   .list-card,
   .list-card li {
-    margin: .9rem;
-    padding: .9rem;
+    margin: 0.25rem;
+    padding: 0.9rem;
     font-size: 0.85rem;
   }
 
