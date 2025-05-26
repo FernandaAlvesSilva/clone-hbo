@@ -26,8 +26,8 @@ Reproduzir a página inicial da HBO Max, praticando conceitos de estruturação 
   ## 📢 Contato
 
 Para dúvidas ou feedbacks:
-- [Seu LinkedIn](https://www.linkedin.com/in/fernanda-alves-605a76242/)
-- [Seu GitHub](https://github.com/FernandaAlvesSilva)
+- [LinkedIn](https://www.linkedin.com/in/fernanda-alves-605a76242/)
+- [GitHub](https://github.com/FernandaAlvesSilva)
    
 ## 📸 Preview
 
